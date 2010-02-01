@@ -12,9 +12,8 @@
 	<script type="text/javascript" src="../Utils/mooCanvas.js"></script>
 	
 	<script type="text/javascript" src="../Source/Core/UI.js"></script>
-	<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+	<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 	<script type="text/javascript" src="../Source/Core/Skin.js"></script>
-	<script type="text/javascript" src="../Source/Core/Interface.js"></script>
 	
 	<script type="text/javascript" src="../Source/Element/Element.js"></script>
 	<script type="text/javascript" src="../Source/Element/Box.js"></script>
@@ -416,7 +415,7 @@
 				props: {
 					'default': {
 						layers: {
-							reorder: ['emboss', 'underlay', 'front', 'reflect'],
+							def: ['emboss', 'underlay', 'front', 'reflect'],
 							
 							emboss: {
 								offset: 0,
@@ -499,7 +498,7 @@
 				props: {
 					'default': {
 						layers: {
-							reorder: ['emboss', 'front', 'reflect', 'reflect2'],
+							def: ['emboss', 'front', 'reflect', 'reflect2'],
 							
 							emboss: {
 								offset: 0,

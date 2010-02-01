@@ -138,7 +138,7 @@ UI.props.TouchBlue = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['border', 'front', 'fakeShadow', 'reflect'],
+					def: ['border', 'front', 'fakeShadow', 'reflect'],
 					
 					border: {
 						offset: ['0px', '0px', '0px', '0px'],
@@ -206,7 +206,7 @@ UI.props.TouchBlue = {
 				},
 				
 				layers: {
-					reorder: ['checkBg', 'check', 'checkFront'],
+					def: ['checkBg', 'check', 'checkFront'],
 					
 					checkBg: {
 						position: 'absolute',
@@ -241,13 +241,13 @@ UI.props.TouchBlue = {
 				size: 8,
 				
 				styles: {
-					height: '100%',
-					'float': 'right',
-					position: 'relative',
+					position:'absolute',
+					right:'0',
+					width: '100%',
 					zIndex: '10000'
 				},
 				layers: {
-					reorder: ['back'],
+					def: ['back'],
 					'default': {
 						position: 'absolute'
 					},
@@ -261,11 +261,11 @@ UI.props.TouchBlue = {
 		thumb: {
 			'default': {
 				styles: {
-					position: 'relative',
+					position: 'absolute',
 					margin: '0'
 				},
 				layers: {
-					reorder: ['main'],
+					def: ['main'],
 					
 					'default': {
 						direction: 'vertical'
@@ -476,7 +476,7 @@ UI.props.TouchBlue = {
 					backgroundColor: '#e0e0e0'
 				},
 				layers: {
-					reorder: ['light', 'dark', 'line', 'line2'],
+					def: ['light', 'dark', 'line', 'line2'],
 					
 					light: {
 						size: ['auto', 1],
@@ -686,7 +686,7 @@ UI.props.TouchBlue = {
 				width: 160,
 				height: 25,
 				layers: {
-					reorder: ['shadow', 'background', 'underlay', 'head'],
+					def: ['shadow', 'background', 'underlay', 'head'],
 					shadow: {
 						size: 6,
 						offsetY: 3,

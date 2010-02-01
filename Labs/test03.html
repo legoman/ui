@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="../Utils/mooCanvas.js"></script>
 	
 	<script type="text/javascript" src="../Source/Core/UI.js"></script>
-	<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+	<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 	<script type="text/javascript" src="../Source/Core/Skin.js"></script>
 	
 	<script type="text/javascript" src="../Source/Element/Element.js"></script>
@@ -32,8 +32,20 @@
 				label : "new window",
 				skin	: 'demo',
 				type	: "shape02",
-				width	: 400,
-				height	: 400,
+				width	: 200,
+				height	: 200,
+				styles		: {
+					margin	: 10
+				}
+			}).inject(document.body);
+			
+			new UI.Element({
+				resizable:true,
+				label : "new window",
+				skin	: 'demo',
+				type	: "shape02b",
+				width	: 132,
+				height	: 150,
 				styles		: {
 					margin	: 10
 				}
@@ -42,7 +54,7 @@
 	</script>
 </head>
 
-<body>
+<body bgcolor="grey">
 	
 </body>
 

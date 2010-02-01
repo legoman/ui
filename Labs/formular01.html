@@ -11,9 +11,10 @@
 	<script type="text/javascript" src="../Utils/mooCanvas.js"></script>
 	
 	<script type="text/javascript" src="../Source/Core/UI.js"></script>
-	<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+	<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 	<script type="text/javascript" src="../Source/Core/Skin.js"></script>
-	<script type="text/javascript" src="../Source/Core/Interface.js"></script>
+
+	<script type="text/javascript" src="../Source/Design/Design.js"></script>
 	
 	<script type="text/javascript" src="../Source/Element/Element.js"></script>
 	<script type="text/javascript" src="../Source/Element/Element.Controller.js"></script>
@@ -45,7 +46,7 @@
 				label : 'Interface...',
 				onClick : function(){
 					var time = $time();
-					new UI.Interface({
+					new UI.Design({
 						target : 'formular'
 					});
 					this.set('html', 'in '+($time() - time)/1000+' ms');

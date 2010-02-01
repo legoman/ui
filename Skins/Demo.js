@@ -22,7 +22,6 @@ UI.props.demo = {
 				position: 'relative',
 				shape: 'roundedRect',
 				offset: 1,
-				color: '#fff',
 				opacity: 1,
 				radius: 0,
 				direction: 'horizontal'
@@ -160,7 +159,7 @@ UI.props.demo = {
 					}
 				},
 				layers: {
-					reorder: ['emboss', 'front', 'reflect'],
+					def: ['emboss', 'front', 'reflect'],
 					
 					emboss: {
 						offset: 0,
@@ -215,7 +214,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['emboss', 'front', 'reflect', 'reflect2'],
+					def: ['emboss', 'front', 'reflect', 'reflect2'],
 					'default': {
 						rotation: 3
 					},
@@ -297,7 +296,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['emboss', 'background', 'front', 'reflect'],
+					def: ['emboss', 'background', 'front', 'reflect'],
 					
 					emboss: {
 						offset: '0px',
@@ -361,7 +360,7 @@ UI.props.demo = {
 		rose: {
 			'default': {
 				layers: {
-					reorder: ['emboss', 'front', 'reflect', 'dark'],
+					def: ['emboss', 'front', 'reflect', 'dark'],
 					
 					emboss: {
 						offset: 0,
@@ -449,7 +448,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['emboss', 'front', 'reflect'],
+					def: ['emboss', 'front', 'reflect'],
 					
 					emboss: {
 						offset: '0px',
@@ -518,7 +517,7 @@ UI.props.demo = {
 					opacity: 1
 				},
 				layers: {
-					reorder: ['shadow', 'front', 'light', 'reflect'],
+					def: ['shadow', 'front', 'light', 'reflect'],
 					
 					shadow: {
 						color: '#000',
@@ -604,7 +603,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['shadow', 'border', 'base', 'reflect'],
+					def: ['shadow', 'border', 'base', 'reflect'],
 					'default': {
 						radius: 11,
 						shape: 'roundedRect'
@@ -630,7 +629,7 @@ UI.props.demo = {
 						shadow: {
 							size:20,
 							blur: 4,
-							opacity: .8,
+							opacity: 0.8,
 							color: '#000'
 						}
 					},
@@ -678,7 +677,7 @@ UI.props.demo = {
 				
 				layers: {
 				
-					reorder: ['shadow', 'border', 'background', 'arrowborder', 'arrow', 'reflect'],
+					def: ['shadow', 'border', 'background', 'arrowborder', 'arrow', 'reflect'],
 					
 					'default': {
 						position: 'absolute'
@@ -903,7 +902,7 @@ UI.props.demo = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['border', 'front', 'fakeShadow', 'reflect'],
+					def: ['border', 'front', 'fakeShadow', 'reflect'],
 					
 					border: {
 						offset: ['0px', '0px', '0px', '0px'],
@@ -956,7 +955,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['checkBg', 'check', 'checkFront'],
+					def: ['checkBg', 'check', 'checkFront'],
 					
 					checkBg: {
 						position: 'absolute',
@@ -997,7 +996,7 @@ UI.props.demo = {
 				},
 				
 				layers: {
-					reorder: ['border', 'front', 'fakeShadow', 'on', 'on1', 'reflect', 'checkShadow', 'checkShadow2', 'checkBg', 'check', 'checkFront'],
+					def: ['border', 'front', 'fakeShadow', 'on', 'on1', 'reflect', 'checkShadow', 'checkShadow2', 'checkBg', 'check', 'checkFront'],
 					
 					border: {
 						offset: ['0px', '0px', '0px', '1px'],
@@ -1081,7 +1080,7 @@ UI.props.demo = {
 			},
 			'checked': {
 				layers: {
-					reorder: ['border', 'front', 'fakeShadow', 'off', 'reflect', 'checkShadow', 'checkShadow2', 'checkBg', 'check', 'checkFront'],
+					def: ['border', 'front', 'fakeShadow', 'off', 'reflect', 'checkShadow', 'checkShadow2', 'checkBg', 'check', 'checkFront'],
 					
 					border: {
 						offset: ['0px', '1px', '0px', '0px']
@@ -1171,7 +1170,7 @@ UI.props.demo = {
 					overflow: 'hidden'
 				},
 				layers: {
-					reorder: ['shadow', 'front', 'light', 'reflect'],
+					def: ['shadow', 'front', 'light', 'reflect'],
 					
 					shadow: {
 						color: '#000',
@@ -1237,7 +1236,7 @@ UI.props.demo = {
 				
 				/* layers properties */
 				layers: {
-					'reorder' : ['base','yes'],
+					'def' : ['base','yes'],
 					'default': {
 						shape: 'complex',
 						baseSize: [150, 150],
@@ -1312,7 +1311,7 @@ UI.props.demo = {
 				
 				/* layers properties */
 				layers: {
-					'reorder': ['base'],
+					'def': ['base'],
 					'default': {
 						shape: 'complex',
 						baseSize: [150, 150],
@@ -1356,7 +1355,7 @@ UI.props.demo = {
 				
 				/* layers properties */
 				layers: {
-					'reorder': ['main'],
+					'def': ['main'],
 					'default': {
 						shape: 'complex',
 						baseSize: [150, 150],
@@ -1383,7 +1382,7 @@ UI.props.demo = {
 				},
 				/* layers properties */
 				layers: {
-					'reorder': ['main'],
+					'def': ['main'],
 					'default': {
 						shape: 'complex',
 						baseSize: [150, 150],
@@ -1550,7 +1549,31 @@ UI.props.demo = {
 						offset: 50,
 						rotation: 10,
 						image: {
-							url: 'http://www.google.com/images/nav_logo3.png'
+							url: 'assets/images.jpg'
+						}
+					}
+				}
+			}
+		},
+		shape02b: {
+			'default': {
+				styles: {
+					position: 'relative'
+				},
+				layers: {
+					base: {
+						position: 'absolute',
+						offset: 10,
+						
+						image: {
+							url: 'assets/metal.jpg'
+						}
+					},
+					frame: {
+						position: 'absolute',
+						offset: 0,
+						image: {
+							url: 'assets/frame.png'
 						}
 					}
 				}
@@ -1573,9 +1596,9 @@ UI.props.demo = {
 							offsetY: 0,
 							opacity: 1,
 							color: '#33ff00'
-						},
+						}
 					},
-					fisrt: {
+					first: {
 						offset: 3,
 						color: '#ccc',
 						opacity: 0.5,
@@ -1599,9 +1622,9 @@ UI.props.demo = {
 							offsetY: 0,
 							opacity: 1,
 							color: '#000'
-						},
+						}
 					},
-					fisrt: {
+					first: {
 						offset: 3,
 						color: '#ccc',
 						opacity: 0.5,
@@ -1757,13 +1780,13 @@ UI.props.demo = {
 						opacity: [1,0],
 						gradient: {
 							type: 'radial',
-							opacity: [1,.1],
+							opacity: [1,0.1],
 							color: ['#fff', '#f53b3a'],
 							startCircle: ['26%', '16%', '1%','10%'],
 							endCircle: ['38%', '36%', '120%']
 						},
 						offset: ['2%','auto','auto']
-					},
+					}
 				}
 			}
 		},
@@ -1790,7 +1813,7 @@ UI.props.demo = {
 							blur:164,
 							offsetY: 8,
 							opacity: 0.7
-						},
+						}
 					}
 				}
 			}

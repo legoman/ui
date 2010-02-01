@@ -9,11 +9,10 @@
 	<script type="text/javascript" src="../Utils/mooCanvas.js"></script>
 	
 	<script type="text/javascript" src="../Source/Core/UI.js"></script>
-	<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+	<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 	<script type="text/javascript" src="../Source/Core/Skin.js"></script>
 	
 	<script type="text/javascript" src="../Source/Element/Element.js"></script>
-	<script type="text/javascript" src="../Source/Element/Element.Controller.js"></script>
 	<script type="text/javascript" src="../Source/Element/Scrollbar.js"></script>
 	<script type="text/javascript" src="../Source/Element/Label.js"></script>
 
@@ -21,7 +20,6 @@
 	<script type="text/javascript" src="../Source/Form/Button.js"></script>
 	<script type="text/javascript" src="../Source/View/View.js"></script>
 	
-	<script type="text/javascript" src="../Source/Window/Window.Controller.js"></script>
 	<script type="text/javascript" src="../Source/Window/Window.js"></script>
 	
 	<script type="text/javascript" src="../Skins/AquaGraphite.js"></script>
@@ -42,13 +40,13 @@
 				direction:'horizontal',
 				resizable: false,
 				styles: {
-					margin: '40px',
+					margin: '0px',
 					backgroundColor: '#fff',
 					fontFamily: ''
 
 				}
 			}).inject($(document.body))
-			.setContent('ajax','../Source/View/View.js');
+			.setContent('ajax','assets/pulp0.json');
 			
 			var view = new UI.View({
 				width: 400,

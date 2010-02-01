@@ -12,9 +12,8 @@
 		<script type="text/javascript" src="../Utils/mooTree.js"></script>
 		
 		<script type="text/javascript" src="../Source/Core/UI.js"></script>
-		<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+		<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 		<script type="text/javascript" src="../Source/Core/Skin.js"></script>
-		<script type="text/javascript" src="../Source/Core/Interface.js"></script>
 		
 		<script type="text/javascript" src="../Source/Element/Element.js"></script>
 		<script type="text/javascript" src="../Source/Element/Label.js"></script>
@@ -76,84 +75,16 @@
 											controls		: ['close']
 										});
 									}
-								},
-								{ 
-									text 		: 'Software version...',
-									action : function() { this.test('about'); alert('click')}.bind(this)
-								},
-								{ text		: 'separator' },
-								{ 
-									text 		: 'Préférences systemes...',
-									action : function() { new App.Settings() }
-								},
-								{ text		: 'separator' },{
-									text : 'Elements récents',
-									menu : [
-										{text : 'Finder'},
-										{text : 'Safari'},
-										{text : 'Mail'},
-										{text : 'Protoshop'},
-										{text : 'Nasty Explorer'}
-									]
-								},
-								{ text		: 'separator' },
-								{
-									text : 'Fermer la session'
 								}
-							]
-						},
-						{
-							text : 'New',
-							options : {'class' : 'ui-dd-new'},
-							menu		: [
-								{
-									text : 'Button',
-									action : function() { 
-										new UI.Button().inject(form, 'top');
-									}.bind(this)
-								},
-								{ 
-									text 		: 'Window',
-									action : function() { 
-										new UI.Window();
-									}.bind(this)
-								}
-							]
-						},
-						{
-							text : 'Window',
-							options : {'class' : 'ui-dd-new'},
-							menu		: [
-								{
-									text : 'About',
-									action : function() { this.test('about'); alert('click')}.bind(this)
-								},
-								{ text 		: 'Minimizer'},
-								{ text		: 'separator' },
-								{ text		: 'Cascade',
-								  action: function(){
-								  	this.windowManager.resetCascade()
-								  }.bind(this)
-								  
-								}
-							]
-						},
-						{
-							text : 'Help',
-							options : {'class' : 'ui-dd-help'},
-							menu : [
-								{ text : 'Welcome' },
-								{ text : 'separator' },
-								{ text : 'Update...' },
-								{ text : 'separator' },
-								{ text : 'Settings...' }
 							]
 						}
 					]						
 				}).inject(document.body,'top');
 	
 	
-				this.workspace = new UI.SplitView().inject(document.body);
+				this.workspace = new UI.SplitView({
+					width:300
+				}).inject(document.body);
 				
 				
 				new UI.TabView({
@@ -164,7 +95,7 @@
 						},
 						{
 							name : 'Components',
-							url	: 'assets/pulp2.json'
+							url	: 'assets/pulp0.json'
 						},
 						{
 							name : 'Styles',
@@ -211,9 +142,21 @@
 				
 			});
 		</script>
+		<style>
+			html {
+				height:100%;
+			}
+			body{
+				overflow:hidden;
+				height:100%;
+				margin:0;
+				padding:0;
+				background:#e8e8e8
+			}
+		</style>
 	</head>
 
-	<body style="overflow:hidden;height:100%;margin:0" bgcolor="#e8e8e8">
+	<body style=">
 	</body>
 
 </html>

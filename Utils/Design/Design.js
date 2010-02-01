@@ -1,6 +1,6 @@
 /*
 ---
-description: The UI.Interface class let you replace default dom components by mooolego components.
+description: The UI.Design class let you replace default dom components by mooolego components.
 
 authors: [moolego,r2d2]
 
@@ -8,13 +8,13 @@ requires:
 - core:1.2.1: '*'
 - mooCanvas
 
-provides: [UI.Canvas]
+provides: [UI.Design]
  
 ...
 */
 /*
 	
-	Class: UI.Interface
+	Class: UI.Design
 		The UI.Interface class let you replace default dom components by mooolego components.
 	
 	Require:
@@ -51,7 +51,7 @@ provides: [UI.Canvas]
 	    styles, submit, target, text, toInt, value, width, x, y
 */
 
-UI.Interface = new Class({
+UI.Design = new Class({
 
 	Implements : [Options, Events],
 

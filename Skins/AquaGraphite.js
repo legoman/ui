@@ -169,7 +169,7 @@ UI.props.AquaGraphite = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					background: {
 						offset: '0px',
 						color: ['#666666', '#f2f2f2'],
@@ -186,12 +186,12 @@ UI.props.AquaGraphite = {
 			},
 			over: {
 				layers: {
-					reorder: ['background', 'main']
+					def: ['background', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					main: {
 						color: '#787878'
 					
@@ -228,7 +228,7 @@ UI.props.AquaGraphite = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['emboss', 'border', 'main'],
+					def: ['emboss', 'border', 'main'],
 					emboss: {
 						offset: '0px',
 						color: '#fff',
@@ -253,12 +253,12 @@ UI.props.AquaGraphite = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'border', 'main']
+					def: ['emboss', 'border', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -295,7 +295,7 @@ UI.props.AquaGraphite = {
 		window: {
 			'default': {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -344,7 +344,7 @@ UI.props.AquaGraphite = {
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -453,7 +453,7 @@ UI.props.AquaGraphite = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['emboss', 'background', 'main', 'reflect', 'light'],
+					def: ['emboss', 'background', 'main', 'reflect', 'light'],
 					
 					'default': {
 						radius: 6
@@ -524,7 +524,7 @@ UI.props.AquaGraphite = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					background: {
 						offset: 0,
@@ -565,7 +565,7 @@ UI.props.AquaGraphite = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					background: {
 						offset: 0,
@@ -655,7 +655,7 @@ UI.props.AquaGraphite = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					'default': {
 						radius: 0
@@ -1203,7 +1203,7 @@ UI.props.AquaGraphite = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['border', 'front'],
+					def: ['border', 'front'],
 					
 					border: {
 						offset: [5, 2, 10],
@@ -1242,9 +1242,9 @@ UI.props.AquaGraphite = {
 				},
 				
 				layers: {
-					reorder: ['littleshadow', 'shadowarrow', 'border', 'borderarrow', 'main', 'mainarrow', 'reflect', 'reflectdown', 'reflectarrow'],
-					//reorder : ['littleshadow','shadowarrow','border','borderarrow','main','mainarrow','light','reflect','reflectdown'],
-					//reorder : ['littleshadow','shadowarrow', , 'main','mainarrow','reflect','reflectdown','reflectarrow'],
+					def: ['littleshadow', 'shadowarrow', 'border', 'borderarrow', 'main', 'mainarrow', 'reflect', 'reflectdown', 'reflectarrow'],
+					//def : ['littleshadow','shadowarrow','border','borderarrow','main','mainarrow','light','reflect','reflectdown'],
+					//def : ['littleshadow','shadowarrow', , 'main','mainarrow','reflect','reflectdown','reflectarrow'],
 					'default': {
 						radius: 2,
 						position: 'absolute'
@@ -1636,14 +1636,14 @@ UI.props.AquaGraphite = {
 			'default': {
 				height: 48,
 				layers: {
-					reorder: []
+					def: []
 				},
 				itemPadding: 0,
 				presentation: 'icon',
 				padding: '5px 0 4px 8px'
 			},
 			layers: {
-				reorder: []
+				def: []
 			}
 		}
 	},
@@ -1715,48 +1715,28 @@ UI.props.AquaGraphite = {
 			'default': {
 				height:'100%'
 			}
-		},
-		tabview: {
-			'default': {
-				styles: {
-					overflow: 'hidden',
-					backgroundColor: 'transparent'
-				},
-				
-				components: {
-					tabbar: {
-						component: 'segment',
-						type: 'tabbar'
-					}
-				}
-			}
 		}
 	},
 	
-	tabview: {
-		'default': {
-			'default': {
-				styles: {
-					overflow: 'hidden',
-					backgroundColor: 'transparent'
+	tabview : {
+		'default' : {
+			'default' : {
+				styles : {
+					overflow : 'hidden',
+					left : '0px',
+					top : '0px'
 				},
 				
-				components: {
-					tabbar: {
-						component: 'segment',
-						type: 'tabbar'
-					},
-					tabs: {
-						component: 'button',
-						type: 'tabs'
-					},
-					view:{
-						component: 'box'
+				components : {
+					tabbar : {
+						component : 'element',
+						type : 'tabbar'
 					}
 				}
 			}
 		}
 	},
+
 	
 	splitview: {
 		'default': {
@@ -1784,7 +1764,7 @@ UI.props.AquaGraphite = {
 				},
 				views: {
 					side: {
-						width: 160,
+						width: 260,
 						overflow: 'hidden',
 						styles: {
 							'float': 'left',
@@ -1923,7 +1903,7 @@ UI.props.AquaGraphite = {
 			over: {
 			
 				layers: {
-					reorder: ['base', 'line', 'line2'],
+					def: ['base', 'line', 'line2'],
 					
 					base: {
 						gradient: {
@@ -1968,7 +1948,7 @@ UI.props.AquaGraphite = {
 					zIndex: '10000'
 				},
 				layers: {
-					reorder: ['back', 'main', 'side'],
+					def: ['back', 'main', 'side'],
 					'default': {
 						position: 'absolute'
 					},
@@ -2048,7 +2028,7 @@ UI.props.AquaGraphite = {
 						zIndex: '10000'
 					},
 					layers: {
-						reorder: ['back', 'main', 'side'],
+						def: ['back', 'main', 'side'],
 						'default': {
 							position: 'absolute'
 						},
@@ -2327,30 +2307,48 @@ UI.props.AquaGraphite = {
 				styles: {
 					width: '160px',
 					height: '42px',
-					position: 'fixed'
-				
+					position: 'fixed',
+					fontSize: '9px'
 				},
 				components: {
 					title: {
 						type: 'MignifiedTitle',
 						emboss: true,
-						padding: '14px 0'
+						padding: '14px 0',
+						fontSize: '9px'
 					}
 				},
 				layers: {
-					reorder: ['base'],
+					def: ['border','base','head','headfront'],
+					border: {
+						offset: 0,
+						color: '#000',
+						opacity: 0.3,
+						radius: 5
+					},
 					base: {
-						position: 'absolute',
-						color: ['#CACACA', '#CFCFCF'],
-						offset: [2, 1, 1],
-						radius: 8,
+						offset: 1,
+						color: '#000',
+						opacity: 1,
+						radius: 4,
 						shadow: {
-							size: 4,
-							blur: 4,
-							offsetY: 0,
-							opacity: 0.4,
+							size:8,
+							blur: 16,
+							offsetY: 2,
+							opacity: 0.5,
 							color: '#000'
 						}
+					},
+					head: {
+						color: ['#dcdcdc', '#404040'],
+						offset: [0, 0, 'auto'],
+						size: ['auto', 44],
+						radius: [4, 4, 4, 4]
+					},
+					headfront: {
+						color: ['#C4C4C4', '#989898'],
+						offset: [1, 0],
+						radius: [4, 4, 4, 4]
 					}
 				}
 			}
@@ -2395,7 +2393,7 @@ UI.props.AquaGraphite = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['base', 'head', 'reflect'],
+					def: ['base', 'head', 'reflect'],
 					'default': {
 						position: 'relative',
 						shape: 'roundedRect',
@@ -2435,7 +2433,7 @@ UI.props.AquaGraphite = {
 			},
 			inactive: {
 				layers: {
-					reorder: ['base', 'head']
+					def: ['base', 'head']
 				}
 			},
 			minimized: {
@@ -2538,7 +2536,7 @@ UI.props.AquaGraphite = {
 				/* layers properties */
 					/* layers properties */
 				layers: {
-					reorder: ['default','border','base','head','headfront'],
+					def: ['default','border','base','head','headfront'],
 					'default': {
 						position: 'relative',
 						shape: 'roundedRect',
@@ -2639,7 +2637,7 @@ UI.props.AquaGraphite = {
 				
 				},
 				layers: {
-					reorder: ['base', 'head'],
+					def: ['base', 'head'],
 					base: {
 						shadow: {
 							size: 3,
@@ -2681,7 +2679,7 @@ UI.props.AquaGraphite = {
 					cursor: 'pointer'
 				},
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -2733,7 +2731,7 @@ UI.props.AquaGraphite = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2759,7 +2757,7 @@ UI.props.AquaGraphite = {
 			'default': {},
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2778,7 +2776,7 @@ UI.props.AquaGraphite = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2817,7 +2815,7 @@ UI.props.AquaGraphite = {
 				
 				
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -2870,7 +2868,7 @@ UI.props.AquaGraphite = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2896,7 +2894,7 @@ UI.props.AquaGraphite = {
 			'default': {},
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2915,7 +2913,7 @@ UI.props.AquaGraphite = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2950,7 +2948,7 @@ UI.props.AquaGraphite = {
 					cursor: 'pointer'
 				},
 				layers: {
-					reorder: ['main'],
+					def: ['main'],
 					
 					'default': {
 						position: 'absolute',
@@ -2973,7 +2971,7 @@ UI.props.AquaGraphite = {
 		close: {
 			'default': {
 				layers: {
-					reorder: ['main','line', 'line2'],
+					def: ['main','line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2998,7 +2996,7 @@ UI.props.AquaGraphite = {
 		minimize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line'],
+					def: ['main', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -3015,7 +3013,7 @@ UI.props.AquaGraphite = {
 		maximize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line', 'line2'],
+					def: ['main', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -3195,58 +3193,57 @@ UI.props.AquaGraphite = {
 					}
 				}
 			}
-		}
-	},
-	
-	segment:{
-		tabbar: {
-			'default': {
-				height: 21,	
-				width:500,			
+		},
+		tabbar : {
+			'default' : {
+				
+				height		 : 25,
+				width		 : 1000,
+				
 				/* layers properties */
-				styles: {
-					position: 'relative',
-					display: 'block',
-					fontSize: '.7em',
-					textAlign: 'center',
-					width: '100%',
-					padding: '0',
-					margin: '0',
-					top: '0px',
-					left: '0px',
-					overflow: 'hidden'
+				styles : {
+					position : 'relative',
+					display	 : 'block',
+					fontSize : '.7em',
+					height	 : '24px',
+					width	 : '100%',
+					padding	 : '0',
+					margin	 : '0',
+					top		 :'0px',
+					left	 : '0px',
+					overflow : 'hidden'
 				},
-				layers: {
-					reorder: ['base', 'background', 'emboss', 'main'],
+				layers		 : {
+					def	 : ['base','background','emboss','main'],
 					
-					base: {
-						gradient: {
-							color: ['#d6d6d6', '#e8e8e8']
+					base : {
+						gradient : {
+							color :	['#d6d6d6','#e8e8e8']
 						},
-						offset: 0
+						offset : 0
 					},
-					background: {
-						gradient: {
-							color: ['#d6d6d6', '#d6d6d6']
+					background : {
+						gradient : {
+							color :	['#d6d6d6','#d6d6d6']
 						},
-						offset: 0
+						offset : 0
 					},
-					emboss: {
-						gradient: {
-							color: ['#5d5d5d', '#5d5d5d']
+					emboss	 : {
+						gradient : {
+							color :	['#5d5d5d','#5d5d5d']
 						},
-						offset: [0, 0,0, 0]
+						offset : [0,0,4,0]
 					},
-					main: {
-						opacity: 1,
-						gradient: {
-							color: ['#9c9c9c', '#888888']
+					main	 : {
+						opacity :1,
+						gradient : {
+							color :	['#9c9c9c','#888888']
 						},
-						offset: [0, 1, 1, 0]
+						offset : [0,1,1,0]
 					}
 				}
 			}
-		}	
+		}
 	},
 	
 	bubble: {
@@ -3371,6 +3368,7 @@ UI.props.AquaGraphite = {
 			'default': {
 				/* css properties */
 				styles: {
+					display:'block',
 					color: '#000'
 				},
 				
@@ -3415,7 +3413,7 @@ UI.props.AquaGraphite = {
 				/* layers properties */
 				
 				layers: {
-					reorder: ['default', 'border', 'base'],
+					def: ['default', 'border', 'base'],
 					'default': {
 						radius: 0,
 						opacity: 0.98

@@ -149,7 +149,7 @@ UI.props.AquaBlack = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					background: {
 						offset: '0px',
 						color: ['#666666', '#f2f2f2'],
@@ -166,12 +166,12 @@ UI.props.AquaBlack = {
 			},
 			over: {
 				layers: {
-					reorder: ['background', 'main']
+					def: ['background', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					main: {
 						color: '#787878'
 					
@@ -208,7 +208,7 @@ UI.props.AquaBlack = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['emboss', 'border', 'main'],
+					def: ['emboss', 'border', 'main'],
 					emboss: {
 						offset: '0px',
 						color: '#fff',
@@ -233,12 +233,12 @@ UI.props.AquaBlack = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'border', 'main']
+					def: ['emboss', 'border', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -275,7 +275,7 @@ UI.props.AquaBlack = {
 		window: {
 			'default': {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -324,7 +324,7 @@ UI.props.AquaBlack = {
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -433,7 +433,7 @@ UI.props.AquaBlack = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['emboss', 'background', 'main', 'reflect', 'light'],
+					def: ['emboss', 'background', 'main', 'reflect', 'light'],
 					
 					'default': {
 						radius: 6
@@ -503,7 +503,7 @@ UI.props.AquaBlack = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					background: {
 						offset: 0,
@@ -569,7 +569,7 @@ UI.props.AquaBlack = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					'default': {
 						radius: 0
@@ -1033,7 +1033,7 @@ UI.props.AquaBlack = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['border', 'front', 'fakeShadow', 'reflect'],
+					def: ['border', 'front', 'fakeShadow', 'reflect'],
 					
 					border: {
 						offset: ['0px', '0px', '0px', '0px'],
@@ -1085,7 +1085,7 @@ UI.props.AquaBlack = {
 				},
 				
 				layers: {
-					reorder: ['checkBg', 'check', 'checkFront'],
+					def: ['checkBg', 'check', 'checkFront'],
 					
 					checkBg: {
 						position: 'absolute',
@@ -1343,14 +1343,14 @@ UI.props.AquaBlack = {
 			'default': {
 				height: 48,
 				layers: {
-					reorder: []
+					def: []
 				},
 				itemPadding: 0,
 				presentation: 'icon',
 				padding: '5px 0 4px 8px'
 			},
 			layers: {
-				reorder: []
+				def: []
 			}
 		}
 	},
@@ -1602,7 +1602,7 @@ UI.props.AquaBlack = {
 			over: {
 			
 				layers: {
-					reorder: ['base', 'line', 'line2'],
+					def: ['base', 'line', 'line2'],
 					
 					base: {
 						gradient: {
@@ -1644,7 +1644,7 @@ UI.props.AquaBlack = {
 					zIndex: '10000'
 				},
 				layers: {
-					reorder: ['back', 'main', 'side'],
+					def: ['back', 'main', 'side'],
 					'default': {
 						position: 'absolute'
 					},
@@ -1869,7 +1869,7 @@ UI.props.AquaBlack = {
 				width: 160,
 				height: 25,
 				layers: {
-					reorder: ['shadow', 'background', 'underlay', 'head'],
+					def: ['shadow', 'background', 'underlay', 'head'],
 					shadow: {
 						size: 6,
 						offsetY: 3,
@@ -1924,7 +1924,7 @@ UI.props.AquaBlack = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['shadow', 'background', 'head', 'reflect'],
+					def: ['shadow', 'background', 'head', 'reflect'],
 					'default': {
 						position: 'relative',
 						shape: 'roundedRect',
@@ -1962,7 +1962,7 @@ UI.props.AquaBlack = {
 			},
 			inactive: {
 				layers: {
-					reorder: ['shadow', 'background', 'head']
+					def: ['shadow', 'background', 'head']
 				}
 			},
 			minimized: {
@@ -1988,7 +1988,7 @@ UI.props.AquaBlack = {
 				
 				
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -2040,7 +2040,7 @@ UI.props.AquaBlack = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2066,7 +2066,7 @@ UI.props.AquaBlack = {
 			'default': {},
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2085,7 +2085,7 @@ UI.props.AquaBlack = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2121,7 +2121,7 @@ UI.props.AquaBlack = {
 				},
 				
 				layers: {
-					reorder: ['main', 'line', 'line2'],
+					def: ['main', 'line', 'line2'],
 					
 					'default': {
 						position: 'absolute',
@@ -2139,7 +2139,7 @@ UI.props.AquaBlack = {
 		close: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line', 'line2'],
+					def: ['main', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2164,7 +2164,7 @@ UI.props.AquaBlack = {
 		minimize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line'],
+					def: ['main', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2181,7 +2181,7 @@ UI.props.AquaBlack = {
 		maximize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line', 'line2'],
+					def: ['main', 'line', 'line2'],
 					
 					line: {
 						position: 'absolute',
@@ -2420,7 +2420,7 @@ UI.props.AquaBlack = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['shadow', 'background', 'head', 'reflect'],
+					def: ['shadow', 'background', 'head', 'reflect'],
 					'default': {
 						position: 'relative',
 						shape: 'roundedRect',
@@ -2457,7 +2457,7 @@ UI.props.AquaBlack = {
 			},
 			inactive: {
 				layers: {
-					reorder: ['shadow', 'background'],
+					def: ['shadow', 'background'],
 					shadow: {
 						offsetY: 2,
 						size: 20,
@@ -2654,7 +2654,7 @@ UI.props.AquaBlack = {
 					overflow: 'hidden'
 				},
 				layers: {
-					reorder: ['base', 'background', 'emboss', 'main'],
+					def: ['base', 'background', 'emboss', 'main'],
 					
 					base: {
 						gradient: {

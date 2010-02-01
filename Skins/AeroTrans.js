@@ -171,7 +171,7 @@ UI.props.AeroTrans = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					background: {
 						offset: '0px',
 						color: ['#666666', '#f2f2f2'],
@@ -188,12 +188,12 @@ UI.props.AeroTrans = {
 			},
 			over: {
 				layers: {
-					reorder: ['background', 'main']
+					def: ['background', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					main: {
 						color: '#787878'
 					
@@ -230,7 +230,7 @@ UI.props.AeroTrans = {
 					'default': {
 						radius: 7
 					},
-					reorder: ['emboss', 'border', 'main'],
+					def: ['emboss', 'border', 'main'],
 					emboss: {
 						offset: '0px',
 						color: '#fff',
@@ -255,12 +255,12 @@ UI.props.AeroTrans = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'border', 'main']
+					def: ['emboss', 'border', 'main']
 				}
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -297,7 +297,7 @@ UI.props.AeroTrans = {
 		window: {
 			'default': {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -346,7 +346,7 @@ UI.props.AeroTrans = {
 			},
 			'down': {
 				layers: {
-					reorder: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
+					def: ['emboss', 'border', 'inner1', 'inner2', 'inner3', 'inner4', 'main'],
 					inner1: {
 						position: 'absolute',
 						color: ['#393939', '#686868'],
@@ -455,7 +455,7 @@ UI.props.AeroTrans = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['emboss', 'background', 'main', 'reflect', 'light'],
+					def: ['emboss', 'background', 'main', 'reflect', 'light'],
 					
 					'default': {
 						radius: 6
@@ -526,7 +526,7 @@ UI.props.AeroTrans = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					background: {
 						offset: 0,
@@ -592,7 +592,7 @@ UI.props.AeroTrans = {
 				/* layers properties */
 				layers: {
 				
-					reorder: ['background', 'main'],
+					def: ['background', 'main'],
 					
 					'default': {
 						radius: 0
@@ -1081,7 +1081,7 @@ UI.props.AeroTrans = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['border', 'front'],
+					def: ['border', 'front'],
 					
 					border: {
 						offset: [5, 2, 10],
@@ -1120,9 +1120,9 @@ UI.props.AeroTrans = {
 				},
 				
 				layers: {
-					reorder: ['littleshadow', 'shadowarrow', 'border', 'borderarrow', 'main', 'mainarrow', 'reflect', 'reflectdown', 'reflectarrow'],
-					//reorder : ['littleshadow','shadowarrow','border','borderarrow','main','mainarrow','light','reflect','reflectdown'],
-					//reorder : ['littleshadow','shadowarrow', , 'main','mainarrow','reflect','reflectdown','reflectarrow'],
+					def: ['littleshadow', 'shadowarrow', 'border', 'borderarrow', 'main', 'mainarrow', 'reflect', 'reflectdown', 'reflectarrow'],
+					//def : ['littleshadow','shadowarrow','border','borderarrow','main','mainarrow','light','reflect','reflectdown'],
+					//def : ['littleshadow','shadowarrow', , 'main','mainarrow','reflect','reflectdown','reflectarrow'],
 					'default': {
 						radius: 2,
 						position: 'absolute'
@@ -1500,14 +1500,14 @@ UI.props.AeroTrans = {
 			'default': {
 				height: 48,
 				layers: {
-					reorder: []
+					def: []
 				},
 				itemPadding: 0,
 				presentation: 'icon',
 				padding: '5px 0 4px 8px'
 			},
 			layers: {
-				reorder: []
+				def: []
 			}
 		}
 	},
@@ -1770,7 +1770,7 @@ UI.props.AeroTrans = {
 			over: {
 			
 				layers: {
-					reorder: ['base', 'line', 'line2'],
+					def: ['base', 'line', 'line2'],
 					
 					base: {
 						gradient: {
@@ -1812,7 +1812,7 @@ UI.props.AeroTrans = {
 					zIndex: '10000'
 				},
 				layers: {
-					reorder: ['back', 'main', 'side'],
+					def: ['back', 'main', 'side'],
 					'default': {
 						position: 'absolute'
 					},
@@ -2088,7 +2088,7 @@ UI.props.AeroTrans = {
 					}
 				},
 				layers: {
-					reorder: ['head'],
+					def: ['head'],
 					head: {
 						position: 'absolute',
 						color: ['#CACACA', '#CFCFCF'],
@@ -2138,7 +2138,7 @@ UI.props.AeroTrans = {
 				
 				/* layers properties */
 				layers: {
-					reorder: ['base', 'head', 'reflect'],
+					def: ['base', 'head', 'reflect'],
 					'default': {
 						position: 'relative',
 						shape: 'roundedRect',
@@ -2178,7 +2178,7 @@ UI.props.AeroTrans = {
 			},
 			inactive: {
 				layers: {
-					reorder: ['base', 'head']
+					def: ['base', 'head']
 				}
 			},
 			minimized: {
@@ -2394,7 +2394,7 @@ UI.props.AeroTrans = {
 				
 				},
 				layers: {
-					reorder: ['base', 'head'],
+					def: ['base', 'head'],
 					base: {
 						shadow: {
 							size: 3,
@@ -2436,7 +2436,7 @@ UI.props.AeroTrans = {
 					cursor: 'pointer'
 				},
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -2488,7 +2488,7 @@ UI.props.AeroTrans = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2514,7 +2514,7 @@ UI.props.AeroTrans = {
 			'default': {},
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2533,7 +2533,7 @@ UI.props.AeroTrans = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2572,7 +2572,7 @@ UI.props.AeroTrans = {
 				
 				
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache'],
 					
 					'default': {
 						position: 'absolute',
@@ -2625,7 +2625,7 @@ UI.props.AeroTrans = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2651,7 +2651,7 @@ UI.props.AeroTrans = {
 			'default': {},
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2670,7 +2670,7 @@ UI.props.AeroTrans = {
 			
 			over: {
 				layers: {
-					reorder: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
+					def: ['emboss', 'background', 'main', 'reflect', 'cache', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2705,7 +2705,7 @@ UI.props.AeroTrans = {
 					cursor: 'pointer'
 				},
 				layers: {
-					reorder: ['main'],
+					def: ['main'],
 					
 					'default': {
 						position: 'absolute',
@@ -2728,7 +2728,7 @@ UI.props.AeroTrans = {
 		close: {
 			'default': {
 				layers: {
-					reorder: ['main','line', 'line2'],
+					def: ['main','line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'line',
@@ -2753,7 +2753,7 @@ UI.props.AeroTrans = {
 		minimize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line'],
+					def: ['main', 'line'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2770,7 +2770,7 @@ UI.props.AeroTrans = {
 		maximize: {
 			'default': {
 				layers: {
-					reorder: ['main', 'line', 'line2'],
+					def: ['main', 'line', 'line2'],
 					line: {
 						position: 'absolute',
 						shape: 'lineUp',
@@ -2972,7 +2972,7 @@ UI.props.AeroTrans = {
 					overflow: 'hidden'
 				},
 				layers: {
-					reorder: ['base', 'background', 'emboss', 'main'],
+					def: ['base', 'background', 'emboss', 'main'],
 					
 					base: {
 						gradient: {

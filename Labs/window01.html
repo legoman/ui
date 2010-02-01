@@ -11,9 +11,8 @@
 	<script type="text/javascript" src="../Utils/mooCanvas.js"></script>
 	
 	<script type="text/javascript" src="../Source/Core/UI.js"></script>
-	<script type="text/javascript" src="../Source/Core/Canvas.js"></script>
+	<script type="text/javascript" src="../Source/Core/Paint.js"></script>
 	<script type="text/javascript" src="../Source/Core/Skin.js"></script>
-	<script type="text/javascript" src="../Source/Core/Interface.js"></script>
 	
 	<script type="text/javascript" src="../Source/Element/Element.js"></script>
 
@@ -38,39 +37,21 @@
 	
 	<script type="text/javascript">
 		window.addEvent('load', function() {
-			var window1 = new UI.Window({
+			new UI.Window({
 				title		: 'Default Framed Window ',
 				width		: 640,
 				height		: 480,
 				overflow	: 'scrollbar',
 				location	: 'center'
-			});
-			
-			
-			window1.setContent('iframe','formular02.html');
+			}).setContent('iframe','formular02.html');
 
 			
-			var window2 = new UI.Window({
-				title		: 'Default Window',
+			new UI.Window({
+				title		: 'Default Window with ajax content',
 				overflow	: 'scrollbar'
-			});
+			}).setContent('ajax','assets/window.json');
 			
-			window2.setContent('ajax','assets/window.json');
-			
-			
-			var window3 = new UI.Window({
-				skin		: 'AeroTrans',
-				title		: 'AeroTrans Window',
-				overflow	: 'scrollbar'
-			});
-			
-			var window4 = new UI.Window({
-				skin		: 'AquaBlue',
-				title		: 'Aqua Blue Window',
-				overflow	: 'scrollbar'
-			});
-			
-			window3.setContent('ajax','assets/window.json');
+
 		});
 	</script>
 </head>
