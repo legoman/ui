@@ -1589,10 +1589,10 @@ UI.props.demo = {
 						offset: 0,
 						color: '#ccc',
 						opacity: 1,
-						radius: 100,
+						radius: 10,
 						shadow: {
 							size:32,
-							blur: 512,
+							blur: 64,
 							offsetY: 0,
 							opacity: 1,
 							color: '#33ff00'
@@ -1602,7 +1602,7 @@ UI.props.demo = {
 						offset: 3,
 						color: '#ccc',
 						opacity: 0.5,
-						radius: 100
+						radius: 10
 					}
 				}
 			},
@@ -1615,7 +1615,7 @@ UI.props.demo = {
 						offset: 0,
 						color: '#ccc',
 						opacity: 1,
-						radius: 100,
+						radius: 10,
 						shadow: {
 							size:32,
 							blur: 512,
@@ -1628,7 +1628,7 @@ UI.props.demo = {
 						offset: 3,
 						color: '#ccc',
 						opacity: 0.5,
-						radius: 100
+						radius: 10
 					}
 				}
 			}
