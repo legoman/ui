@@ -96,10 +96,7 @@
 			
 			
 			
-			var tip = new UI.Bubble({
-				target : $(button),
-				label : "<p>Babybel c'est de la balle</p><p>Mais que fait la police?</p>"
-			});
+		
 	
 			
 			this.googlemap = new UI.Button({
@@ -117,12 +114,12 @@
 				props				: {
 					'default'				: {
 						layers				: {
-							reorder			: ['emboss','background','front','reflect'],
+							def			: ['emboss','background','front','reflect'],
 							
 							emboss			: {
 								offset		: '0px',
 								color		: '#000',
-								opacity		: .17,
+								opacity		: '.17',
 								radius		: 7
 							},
 							background		: {
@@ -173,7 +170,7 @@
 			this.youtube = new UI.Button({
 				skin				: 'demo',
 				type				: 'tube',
-				label				: 'OA-5599',
+				label				: 'Tube',
 				labelStyles			: {
 					fontSize		: '42px',
 					fontWeight		: 'bold',
@@ -247,7 +244,7 @@
 				props				: {
 					'default'				: {
 						layers				: {
-							reorder			: ['emboss','underlay','front','reflect'],
+							def			: ['emboss','underlay','front','reflect'],
 							
 							emboss			: {
 								offset		: 0,
@@ -313,7 +310,7 @@
 				props				: {
 					'default'				: {
 						layers				: {
-							reorder			: ['emboss','underlay','front','reflect'],
+							def			: ['emboss','underlay','front','reflect'],
 							
 							emboss			: {
 								offset		: 0,
@@ -379,7 +376,7 @@
 				props				: {
 					'default'				: {
 						layers				: {
-							reorder			: ['emboss','front','reflect','reflect2'],
+							def			: ['emboss','front','reflect','reflect2'],
 							'default'		: {
 								rotation	: 3
 							},
@@ -447,7 +444,7 @@
 				props				: {
 					'default'				: {
 						layers				: {
-							reorder			: ['emboss','front','reflect','reflect2'],
+							def			: ['emboss','front','reflect','reflect2'],
 							
 							emboss			: {
 								offset		: 0,
